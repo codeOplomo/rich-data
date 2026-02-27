@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 35% 16%;
+    --foreground: 210 25% 90%;
+
+    --card: 224 30% 20%;
+    --card-foreground: 210 25% 90%;
+
+    --popover: 224 30% 18%;
+    --popover-foreground: 210 25% 90%;
+
+    --primary: 187 100% 50%;
+    --primary-foreground: 222 45% 8%;
+
+    --secondary: 224 37% 28%;
+    --secondary-foreground: 210 25% 90%;
+
+    --muted: 224 20% 22%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 258 90% 66%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 224 20% 25%;
+    --input: 224 20% 28%;
+    --ring: 187 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 222 35% 12%;
+    --sidebar-foreground: 210 25% 90%;
+    --sidebar-primary: 187 100% 50%;
+    --sidebar-primary-foreground: 222 45% 8%;
+    --sidebar-accent: 224 37% 22%;
+    --sidebar-accent-foreground: 210 25% 90%;
+    --sidebar-border: 224 20% 20%;
+    --sidebar-ring: 187 100% 50%;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground font-body antialiased;
+    background: linear-gradient(135deg, hsl(222 35% 12%), hsl(224 37% 18%), hsl(222 35% 14%));
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Glassmorphism */
+  .glass-card {
+    @apply backdrop-blur-xl rounded-2xl;
+    background: hsl(224 30% 20% / 0.5);
+    border: 1px solid hsl(210 25% 90% / 0.07);
+  }
+
+  .glass-card-hover {
+    @apply backdrop-blur-xl rounded-2xl cursor-pointer;
+    background: hsl(224 30% 20% / 0.5);
+    border: 1px solid hsl(210 25% 90% / 0.07);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card-hover:hover {
+    background: hsl(224 30% 24% / 0.7);
+    border-color: hsl(187 100% 50% / 0.2);
+    box-shadow: 0 0 30px hsl(187 100% 50% / 0.07), 0 25px 50px -12px hsl(222 35% 5% / 0.5);
+    transform: translateY(-4px);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(187 100% 50%), hsl(258 90% 66%));
+  }
+
+  .gradient-text-hero {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(210 25% 98%), hsl(187 100% 60%), hsl(258 90% 70%));
+  }
+
+  /* Glow effects */
+  .glow-cyan {
+    box-shadow: 0 0 20px hsl(187 100% 50% / 0.3), 0 0 60px hsl(187 100% 50% / 0.1);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px hsl(258 90% 66% / 0.3), 0 0 60px hsl(258 90% 66% / 0.1);
+  }
+
+  .neon-border {
+    border: 1px solid hsl(187 100% 50% / 0.2);
+    box-shadow: inset 0 0 30px hsl(187 100% 50% / 0.03), 0 0 15px hsl(187 100% 50% / 0.06);
+  }
+
+  /* Background patterns */
+  .grid-pattern {
+    background-image:
+      linear-gradient(hsl(210 25% 90% / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(210 25% 90% / 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Layout utilities */
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  /* Gradient button bg */
+  .gradient-btn {
+    background: linear-gradient(135deg, hsl(187 100% 50%), hsl(258 90% 66%));
+  }
+
+  .gradient-btn:hover {
+    background: linear-gradient(135deg, hsl(187 100% 55%), hsl(258 90% 72%));
+    box-shadow: 0 0 30px hsl(187 100% 50% / 0.3), 0 0 60px hsl(187 100% 50% / 0.1);
+  }
+
+  /* Gradient divider */
+  .gradient-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(187 100% 50% / 0.3), hsl(258 90% 66% / 0.3), transparent);
+  }
+}
