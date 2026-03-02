@@ -10,22 +10,22 @@ import { BarChart2, Brain, Rocket } from "lucide-react";
 const floatingBadges = [
   {
     icon: BarChart2,
-    title: "Veille Sociale",
-    subtitle: "Analyse en temps réel",
+    title: "Data & Web Analytics",
+    subtitle: "GA4, Tracking complexe et Dashboards",
     position: "top-[10%] right-[-5%] md:right-[-10%]",
     delay: 0,
   },
   {
     icon: Brain,
-    title: "IA Analytics",
-    subtitle: "Insights prédictifs",
+    title: "Solutions IA & LLMs",
+    subtitle: "Intégration d'intelligence artificielle sur-mesure",
     position: "bottom-[20%] right-[-8%] md:right-[-15%]",
     delay: 1,
   },
   {
     icon: Rocket,
-    title: "Digital Products",
-    subtitle: "Web & Apps modernes",
+    title: "Ingénierie Web & Mobile",
+    subtitle: "Développement sur-mesure hautement performant",
     position: "top-[50%] left-[-8%] md:left-[-15%]",
     delay: 2,
   },
@@ -189,8 +189,7 @@ const Hero = () => {
               transition={{ duration: 0.7, delay: 0.6 }}
               className="text-lg md:text-xl text-muted-foreground leading-relaxed"
             >
-              Nous transformons les conversations sociales en intelligence exploitable et créons
-              des produits numériques performants qui vous distinguent.
+              Nous ne créons pas de simples sites vitrines. Nous développons des applications web et mobiles sur-mesure, intégrons des solutions d'IA générative et concevons des architectures de données robustes pour les entreprises exigeantes.
             </motion.p>
 
             {/* CTA Button */}
@@ -200,7 +199,7 @@ const Hero = () => {
               transition={{ duration: 0.7, delay: 0.8 }}
             >
               <Button variant="hero" size="xl" className="group">
-                Découvrir maintenant
+                Découvrir notre stack technique
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </motion.div>
