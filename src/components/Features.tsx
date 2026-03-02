@@ -13,41 +13,41 @@ import {
 const features = [
   {
     icon: Globe,
-    title: "Couverture mondiale",
-    description: "Surveillez les conversations dans plus de 50 langues et sur toutes les grandes plateformes sociales du monde.",
+    title: "Architecture Scalable",
+    description: "Nous concevons des infrastructures cloud prêtes à évoluer pour encaisser la charge de votre hyper-croissance sans aucun ralentissement.",
   },
   {
     icon: Shield,
-    title: "Sécurité d'entreprise",
-    description: "Infrastructure conforme SOC 2 avec chiffrement de bout en bout pour vos données sensibles.",
+    title: "Sécurité & Privacy by Design",
+    description: "Nous déployons des architectures sécurisées avec chiffrement de bout en bout, strictement conformes aux normes de protection (CNDP, RGPD).",
   },
   {
     icon: Cpu,
-    title: "Analyse par IA",
-    description: "Modèles d'apprentissage automatique entraînés sur des milliards de points de données pour une précision inégalée.",
+    title: "IA Privée & Maîtrisée",
+    description: "Nous intégrons la puissance des LLMs et du Machine Learning dans vos outils métiers, sans jamais exposer vos données confidentielles.",
   },
   {
     icon: LineChart,
-    title: "Insights prédictifs",
-    description: "Anticipez les tendances avant qu'elles n'arrivent et gardez une longueur d'avance sur la concurrence.",
+    title: "Code Clean & Documenté",
+    description: "Nous livrons un code source propre, rigoureusement testé, versionné et documenté pour garantir une maintenance sans friction par vos équipes.",
   },
   {
     icon: Palette,
-    title: "Design remarquable",
-    description: "Interfaces pixel-perfect offrant une expérience utilisateur exceptionnelle sur tous les appareils.",
+    title: "Performance Brute",
+    description: "Nous optimisons chaque milliseconde de vos bases de données et de vos requêtes API pour offrir une expérience utilisateur sans aucune latence.",
   },
   {
     icon: Rocket,
-    title: "Déploiement rapide",
-    description: "De l'idée à la production en quelques semaines, pas en mois. Méthodologie agile à son meilleur.",
+    title: "DevOps & CI/CD",
+    description: "Nous automatisons vos processus de mise en production pour vous assurer des itérations rapides, continues et sans interruption de service.",
   },
 ];
 
 const stats = [
-  { target: 500, suffix: "+", label: "Projets" },
-  { target: 98, suffix: "%", label: "Satisfaction" },
-  { target: 50, suffix: "M+", label: "Points de données" },
-  { target: 15, suffix: "+", label: "Secteurs" },
+  { target: 100, suffix: "%", label: "Ingénierie en interne" },
+  { target: 99.9, suffix: "%", label: "Taux de disponibilité" },
+  { target: 50, suffix: "M+", label: "Points de données traités" },
+  { target: 150, suffix: "+", label: "Écosystèmes déployés" },
 ];
 
 const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
@@ -115,13 +115,13 @@ const Features = () => {
           className="text-center mb-16"
         >
           <span className="text-primary text-sm font-medium tracking-wider uppercase">
-            Pourquoi RichData
+            NOTRE EMPREINTE
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-4">
-            Conçu pour la <span className="gradient-text">Performance</span>
+            La performance à <span className="gradient-text">grande échelle</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Chaque fonctionnalité est pensée pour vous donner un avantage compétitif dans le paysage numérique.
+            Déployer des infrastructures logicielles stables, sécurisées et capables de traiter massivement vos données sans aucun compromis.
           </p>
         </motion.div>
 

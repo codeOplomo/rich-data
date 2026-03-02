@@ -33,19 +33,19 @@ const CTASection = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="text-primary text-sm font-medium tracking-wider uppercase">
-              Parlons-en
+              DÉMARRONS VOTRE PROJET
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-4">
-              Prêt à <span className="gradient-text">Transformer</span> votre présence digitale ?
+              Prêt à <span className="gradient-text">Bâtir</span> votre infrastructure de demain ?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Besoin d'une veille sociale, d'une application web remarquable ou d'une stratégie digitale complète ? Nous sommes là pour concrétiser votre projet.
+              Vous avez un défi technique complexe, un besoin d'automatisation IA ou une architecture data à structurer ? Nos ingénieurs sont prêts à transformer vos idées en solutions robustes et scalables.
             </p>
             <div className="space-y-4">
               {[
-                "Consultation stratégique gratuite",
-                "Solution sur mesure adaptée à vos besoins",
-                "Équipe projet dédiée",
+                "Analyse de votre stack et de vos besoins",
+                "Intégration de solutions intelligentes sur-mesure",
+                "Un suivi direct avec les développeurs de votre projet",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3 text-sm">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
@@ -106,7 +106,7 @@ const CTASection = () => {
                 </label>
                 <Textarea
                   id="message"
-                  placeholder="Décrivez ce que vous recherchez..."
+                  placeholder="Décrivez vos besoins (App mobile, Intégration IA, Dashboard Data, Refonte architecture...)"
                   rows={4}
                   required
                   className="bg-muted/50 border-border/50 focus:border-primary/50 placeholder:text-muted-foreground/50 resize-none"
@@ -126,7 +126,7 @@ const CTASection = () => {
                   </>
                 ) : (
                   <>
-                    Envoyer le message
+                    Lancer la discussion
                     <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}

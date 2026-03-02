@@ -6,30 +6,30 @@ const steps = [
   {
     icon: Search,
     number: "01",
-    title: "Découverte & Analyse",
+    title: "Audit & Architecture",
     description:
-      "Nous plongeons au cœur de votre marque, de votre audience et du paysage concurrentiel pour révéler des opportunités ignorées par les autres.",
+      "Nous analysons vos flux de données et concevons une architecture logicielle scalable (Cloud, API, Database) avant d'écrire la première ligne de code.",
   },
   {
     icon: Lightbulb,
     number: "02",
-    title: "Stratégie & Planification",
+    title: "Développement Agile",
     description:
-      "Stratégie basée sur les données, adaptée à vos objectifs — des tableaux de veille aux feuilles de route produit.",
+      "Nous codons votre solution par sprints itératifs. Vous accédez à des environnements de pré-production pour valider chaque fonctionnalité en temps réel.",
   },
   {
     icon: PenTool,
     number: "03",
-    title: "Design & Développement",
+    title: "QA & Intégration IA",
     description:
-      "Notre équipe crée des designs pixel-perfect et développe des solutions robustes et évolutives avec des technologies modernes.",
+      "Nous intégrons vos modèles d'IA et soumettons l'infrastructure à des tests de charge et de sécurité stricts pour garantir une stabilité totale.",
   },
   {
     icon: Rocket,
     number: "04",
-    title: "Lancement & Optimisation",
+    title: "Déploiement CI/CD",
     description:
-      "Nous déployons, surveillons la performance et affinons en continu pour garantir un impact maximal et un ROI optimal.",
+      "Nous automatisons la mise en production et activons un monitoring 24/7 pour assurer la haute disponibilité (Uptime) de vos services.",
   },
 ];
 

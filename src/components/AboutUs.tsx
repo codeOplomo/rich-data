@@ -6,19 +6,19 @@ const teamCards = [
   {
     title: "Développeurs",
     description:
-      "Des experts en technologies modernes, développement web et mobile",
+      "Nous maîtrisons les stacks modernes pour construire des applications natives et web robustes, prêtes à encaisser la charge.",
     image: "/visual-1.webp", // Place dev.png in public/
   },
   {
-    title: "Designers UX/UI",
+    title: "Product Design & UI/UX",
     description:
-      "Création d'interfaces fluides, modernes et esthétiques",
+      "Nous transformons des données complexes et des dashboards en expériences utilisateur intuitives.",
     image: "/visual-1-uiux.png", // Place design.png in public/
   },
   {
-    title: "Analystes IA & Data",
+    title: "Data Science & IA Appliquée",
     description:
-      "Intégration de l'IA et exploitation des données business",
+      "Exploitation avancée de vos données. Intégration d'IA générative (LLMs), automatisation des processus, pipelines de données et tracking analytique (GA4) pointu.",
     image: "/visual-1-data.png", // Place data.png in public/
   },
 ];

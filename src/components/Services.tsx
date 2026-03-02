@@ -13,27 +13,27 @@ import {
 
 const services = [
   {
-    title: "Veille Sociale",
+    title: "Intelligence Économique & Automatisation",
     description:
-      "Captez le pouls des conversations en ligne. Notre plateforme alimentée par l'IA surveille, analyse et fournit des insights exploitables depuis chaque recoin du paysage numérique.",
+      "Nous transformons vos données brutes en tableaux de bord décisionnels et automatisons vos processus métier les plus complexes grâce à l'Intelligence Artificielle.",
     icon: Headphones,
     features: [
-      { icon: BarChart3, text: "Analyse de sentiment en temps réel" },
-      { icon: TrendingUp, text: "Détection et prévision des tendances" },
-      { icon: MessageSquare, text: "Suivi des mentions de marque" },
+      { icon: BarChart3, text: "Intégration d'IA générative" },
+      { icon: TrendingUp, text: "Pipelines Data & Dashboards avancés" },
+      { icon: MessageSquare, text: "Analyse de données sociales en temps réel" },
     ],
     accentClass: "text-primary",
     glowClass: "glow-cyan",
   },
   {
-    title: "Développement Web & App",
+    title: "Plateformes & Applications Métier",
     description:
-      "Du concept au lancement, nous créons des produits numériques ultra-rapides et élégants avec des technologies de pointe qui évoluent avec vos ambitions.",
+      "Nous concevons des portails web, des plateformes SaaS et des applications mobiles sur-mesure dotés d'architectures robustes, sécurisées et prêtes à évoluer. ",
     icon: Code2,
     features: [
-      { icon: Smartphone, text: "Applications multiplateformes" },
-      { icon: Layers, text: "Architecture technique moderne" },
-      { icon: Zap, text: "Approche axée performance" },
+      { icon: Smartphone, text: "Architectures Web & Cloud haute performance" },
+      { icon: Layers, text: "Applications Mobiles natives et cross-platform" },
+      { icon: Zap, text: "Développement de solutions SaaS sur-mesure" },
     ],
     accentClass: "text-accent",
     glowClass: "glow-accent",
@@ -69,13 +69,13 @@ const Services = () => {
           className="text-center mb-16"
         >
           <span className="text-primary text-sm font-medium tracking-wider uppercase">
-            Nos Services
+            NOTRE EXPERTISE
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-4">
-            Deux piliers de l'<span className="gradient-text">Excellence Digitale</span>
+            Nos Pôles d'<span className="gradient-text">Ingénierie Avancée</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Nous combinons une intelligence sociale approfondie avec un développement de classe mondiale pour donner à votre marque un avantage décisif.
+            Transformez vos défis techniques en solutions performantes grâce à notre double expertise en architecture logicielle sur-mesure et en ingénierie de la donnée.
           </p>
         </motion.div>
 
