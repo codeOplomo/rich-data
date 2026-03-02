@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { memo } from "react";
 
 interface Shape {
   className: string;
@@ -21,7 +22,7 @@ const shapes: Shape[] = [
   { className: "animate-float-reverse", size: 55, x: "45%", y: "10%", delay: 1.2, type: "triangle" },
 ];
 
-const ShapeElement = ({ shape }: { shape: Shape }) => {
+const ShapeElement = memo(({ shape }: { shape: Shape }) => {
   const baseClasses = "absolute opacity-[0.06]";
 
   const shapeStyles: Record<string, React.CSSProperties> = {
@@ -69,9 +70,11 @@ const ShapeElement = ({ shape }: { shape: Shape }) => {
       transition={{ duration: 1.5, delay: shape.delay * 0.3 }}
     />
   );
-};
+});
 
-const FloatingShapes = () => {
+ShapeElement.displayName = 'ShapeElement';
+
+const FloatingShapes = memo(() => {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
       {shapes.map((shape, i) => (
@@ -79,6 +82,8 @@ const FloatingShapes = () => {
       ))}
     </div>
   );
-};
+});
+
+FloatingShapes.displayName = 'FloatingShapes';
 
 export default FloatingShapes;

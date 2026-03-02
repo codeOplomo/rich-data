@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, memo } from "react";
 
 declare global {
   interface Window {
@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-const PokeGridBackground = () => {
+const PokeGridBackground = memo(() => {
   const containerRef = useRef<HTMLDivElement>(null);
   const sceneCreated = useRef(false);
 
@@ -308,6 +308,8 @@ const PokeGridBackground = () => {
       style={{ background: "#0a0f1a" }}
     />
   );
-};
+});
+
+PokeGridBackground.displayName = 'PokeGridBackground';
 
 export default PokeGridBackground;

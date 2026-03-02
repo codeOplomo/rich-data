@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState, useCallback, memo } from "react";
+import Image from "next/image";
 
 interface SlideData {
   projectNumber: string;
@@ -72,7 +73,7 @@ declare global {
   }
 }
 
-const InfiniteGallery = () => {
+const InfiniteGallery = memo(() => {
   const sectionRef = useRef<HTMLElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const sceneCreated = useRef(false);
@@ -281,7 +282,9 @@ const InfiniteGallery = () => {
       group.position.set(i * CONFIG.spacingX, 0, 0);
 
       const mat = new THREE.MeshBasicMaterial({
-        map: textureLoader.load(slides[i].image),
+        map: textureLoader.load(slides[i].image, undefined, undefined, (error: any) => {
+          console.warn(`Failed to load texture for slide ${i}:`, error);
+        }),
       });
       const mesh = new THREE.Mesh(planeGeo, mat);
 
@@ -441,6 +444,8 @@ const InfiniteGallery = () => {
       </div>
     </section>
   );
-};
+});
+
+InfiniteGallery.displayName = 'InfiniteGallery';
 
 export default InfiniteGallery;

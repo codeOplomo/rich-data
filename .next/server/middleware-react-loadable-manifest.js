@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"components\\\\Hero.tsx -> @/components/FloatingShapes\":{\"id\":\"components\\\\Hero.tsx -> @/components/FloatingShapes\",\"files\":[\"static/chunks/_app-pages-browser_src_components_FloatingShapes_tsx.js\"]}}"

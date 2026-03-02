@@ -1,54 +1,48 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowRight, Facebook, Instagram, Twitter, Youtube, Code2 } from "lucide-react";
+import { ArrowRight, Facebook, Instagram, Twitter, Youtube, Code2, BarChart2, Brain, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import FloatingShapes from "@/components/FloatingShapes";
+import { lazy, Suspense, useMemo } from "react";
 
-// Floating badge data
-import { BarChart2, Brain, Rocket } from "lucide-react";
-
-const floatingBadges = [
-  {
-    icon: BarChart2,
-    title: "Data & Web Analytics",
-    subtitle: "GA4, Tracking complexe et Dashboards",
-    position: "top-[10%] right-[-5%] md:right-[-10%]",
-    delay: 0,
-  },
-  {
-    icon: Brain,
-    title: "Solutions IA & LLMs",
-    subtitle: "Intégration d'intelligence artificielle sur-mesure",
-    position: "bottom-[20%] right-[-8%] md:right-[-15%]",
-    delay: 1,
-  },
-  {
-    icon: Rocket,
-    title: "Ingénierie Web & Mobile",
-    subtitle: "Développement sur-mesure hautement performant",
-    position: "top-[50%] left-[-8%] md:left-[-15%]",
-    delay: 2,
-  },
-];
+const FloatingShapes = lazy(() => import("@/components/FloatingShapes"));
 
 const Hero = () => {
+  const floatingBadges = useMemo(() => [
+    {
+      icon: BarChart2,
+      title: "Data & Web Analytics",
+      subtitle: "GA4, Tracking complexe et Dashboards",
+      position: "top-[10%] right-[-5%] md:right-[-10%]",
+      delay: 0,
+    },
+    {
+      icon: Brain,
+      title: "Solutions IA & LLMs",
+      subtitle: "Intégration d'intelligence artificielle sur-mesure",
+      position: "bottom-[20%] right-[-8%] md:right-[-15%]",
+      delay: 1,
+    },
+    {
+      icon: Rocket,
+      title: "Ingénierie Web & Mobile",
+      subtitle: "Développement sur-mesure hautement performant",
+      position: "top-[50%] left-[-8%] md:left-[-15%]",
+      delay: 2,
+    },
+  ], []);
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden py-24 md:py-32">
       {/* Background grid pattern */}
       <div className="absolute inset-0 grid-pattern" />
 
-      {/* Gradient orbs */}
-      <div
-        className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full opacity-[0.07] blur-[120px]"
-        style={{ background: "hsl(187 100% 50%)" }}
-      />
-      <div
-        className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full opacity-[0.05] blur-[100px]"
-        style={{ background: "hsl(258 90% 66%)" }}
-      />
+      {/* Gradient orbs - optimized with CSS instead of inline styles */}
+      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full opacity-[0.07] blur-[120px] bg-cyan-500" />
+      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full opacity-[0.05] blur-[100px] bg-purple-500" />
 
-      {/* Floating shapes */}
-      <FloatingShapes />
+      {/* Floating shapes - lazy loaded */}
+      <Suspense fallback={null}>
+        <FloatingShapes />
+      </Suspense>
 
       {/* Content */}
       <div className="container relative z-10 px-6">
@@ -80,11 +74,7 @@ const Hero = () => {
 
               {/* Central Frame */}
               <motion.div
-                className="relative w-full h-full rounded-full border-4 border-primary/50 overflow-hidden flex items-center justify-center"
-                style={{
-                  background: "hsl(222 35% 14% / 0.8)",
-                  boxShadow: "0 0 30px rgba(0,200,200,0.3), 0 0 60px rgba(0,200,200,0.1)",
-                }}
+                className="relative w-full h-full rounded-full border-4 border-primary/50 overflow-hidden flex items-center justify-center bg-slate-900/80 shadow-[0_0_30px_rgba(0,200,200,0.3),_0_0_60px_rgba(0,200,200,0.1)]"
                 animate={{
                   boxShadow: [
                     "0 0 30px rgba(0,200,200,0.3), 0 0 60px rgba(0,200,200,0.1)",
@@ -138,8 +128,8 @@ const Hero = () => {
                 );
               })}
 
-              {/* Orbiting Particles */}
-              {[...Array(3)].map((_, i) => (
+              {/* Orbiting Particles - reduced from 3 to 2 */}
+              {[...Array(2)].map((_, i) => (
                 <motion.div
                   key={`particle-${i}`}
                   className="absolute w-2 h-2 md:w-3 md:h-3 rounded-full bg-primary/60"
@@ -149,12 +139,12 @@ const Hero = () => {
                   }}
                   animate={{
                     x: [
-                      Math.cos((i * 120 * Math.PI) / 180) * 140,
-                      Math.cos(((i * 120 + 360) * Math.PI) / 180) * 140,
+                      Math.cos((i * 180 * Math.PI) / 180) * 140,
+                      Math.cos(((i * 180 + 360) * Math.PI) / 180) * 140,
                     ],
                     y: [
-                      Math.sin((i * 120 * Math.PI) / 180) * 140,
-                      Math.sin(((i * 120 + 360) * Math.PI) / 180) * 140,
+                      Math.sin((i * 180 * Math.PI) / 180) * 140,
+                      Math.sin(((i * 180 + 360) * Math.PI) / 180) * 140,
                     ],
                   }}
                   transition={{

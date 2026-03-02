@@ -1,27 +1,46 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import AboutUs from "@/components/AboutUs";
-import Features from "@/components/Features";
-import Process from "@/components/Process";
-import CTASection from "@/components/CTASection";
-import Footer from "@/components/Footer";
-import InfiniteGallery from "@/components/InfiniteGallery";
+import { lazy, Suspense } from "react";
+import LoadingSpinner from "@/components/ui/loading-spinner";
+
+const Hero = lazy(() => import("@/components/Hero"));
+const AboutUs = lazy(() => import("@/components/AboutUs"));
+const InfiniteGallery = lazy(() => import("@/components/InfiniteGallery"));
+const Services = lazy(() => import("@/components/Services"));
+const Features = lazy(() => import("@/components/Features"));
+const Process = lazy(() => import("@/components/Process"));
+const CTASection = lazy(() => import("@/components/CTASection"));
+const Footer = lazy(() => import("@/components/Footer"));
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <Navbar />
       <main>
-        <Hero />
-        <AboutUs />
-        <InfiniteGallery />
-        <Services />
-        <Features />
-        <Process />
-        <CTASection />
+        <Suspense fallback={<LoadingSpinner />}>
+          <Hero />
+        </Suspense>
+        <Suspense fallback={<div className="h-96 animate-pulse bg-muted" />}>
+          <AboutUs />
+        </Suspense>
+        <Suspense fallback={<div className="h-screen animate-pulse bg-muted" />}>
+          <InfiniteGallery />
+        </Suspense>
+        <Suspense fallback={<div className="h-96 animate-pulse bg-muted" />}>
+          <Services />
+        </Suspense>
+        <Suspense fallback={<div className="h-96 animate-pulse bg-muted" />}>
+          <Features />
+        </Suspense>
+        <Suspense fallback={<div className="h-96 animate-pulse bg-muted" />}>
+          <Process />
+        </Suspense>
+        <Suspense fallback={<div className="h-96 animate-pulse bg-muted" />}>
+          <CTASection />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={<div className="h-32 animate-pulse bg-muted" />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

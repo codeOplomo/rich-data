@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Providers from "@/components/Providers";
-import PokeGridBackground from "@/components/PokeGridBackground";
+import { lazy, Suspense } from 'react';
+
+const PokeGridBackground = lazy(() => import("@/components/PokeGridBackground"));
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PokeGridBackground />
+        <Suspense fallback={null}>
+          <PokeGridBackground />
+        </Suspense>
         <Providers>
           {children}
         </Providers>
