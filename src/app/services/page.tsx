@@ -16,8 +16,6 @@ import {
   ArrowRight,
   CheckCircle2,
 } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -108,11 +106,9 @@ const itemVariants = {
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main>
-        {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center pt-32 pb-20">
+    <>
+      {/* Hero Section */}
+      <section className="relative min-h-[60vh] flex items-center pt-32 pb-20">
           <div className="absolute inset-0 grid-pattern" />
           <div
             className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full opacity-[0.07] blur-[120px]"
@@ -266,8 +262,6 @@ export default function ServicesPage() {
             </motion.div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </div>
+    </>
   );
 }

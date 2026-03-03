@@ -1,8 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import { Users, Target, Award, Heart, Rocket, Code2, Brain, Palette } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -82,9 +80,7 @@ const itemVariants = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main>
+    <>
         {/* Hero Section */}
         <section className="relative min-h-[60vh] flex items-center pt-32 pb-20">
           <div className="absolute inset-0 grid-pattern" />
@@ -349,8 +345,6 @@ export default function AboutPage() {
             </motion.div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </div>
+    </>
   );
 }

@@ -9,8 +9,6 @@ import {
   Headphones,
   Globe,
 } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -161,9 +159,7 @@ export default function PortfolioPage() {
       : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main>
+    <>
         {/* Hero Section */}
         <section className="relative min-h-[50vh] flex items-center pt-32 pb-16">
           <div className="absolute inset-0 grid-pattern" />
@@ -392,8 +388,6 @@ export default function PortfolioPage() {
             </motion.div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </div>
+    </>
   );
 }

@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Providers from "@/components/Providers";
 import { lazy, Suspense } from 'react';
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const PokeGridBackground = lazy(() => import("@/components/PokeGridBackground"));
 
@@ -25,7 +27,13 @@ export default function RootLayout({
           <PokeGridBackground />
         </Suspense>
         <Providers>
-          {children}
+          <div className="min-h-screen">
+            <Navbar />
+            <main>
+              {children}
+            </main>
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

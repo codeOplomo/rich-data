@@ -18,8 +18,6 @@ import {
   TrendingUp,
   Zap,
 } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { use } from "react";
@@ -386,9 +384,7 @@ export default function CaseStudyPage({
   const Icon = project.icon;
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main>
+    <>
         {/* Hero Section */}
         <section className="relative min-h-[50vh] flex items-center pt-32 pb-16">
           <div className="absolute inset-0 grid-pattern" />
@@ -679,8 +675,6 @@ export default function CaseStudyPage({
             </motion.div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </div>
+    </>
   );
 }
