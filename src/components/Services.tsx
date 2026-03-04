@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Headphones,
+  Brain,
   BarChart3,
   TrendingUp,
   MessageSquare,
@@ -16,7 +16,7 @@ const services = [
     title: "Intelligence Économique & Automatisation",
     description:
       "Nous transformons vos données brutes en tableaux de bord décisionnels et automatisons vos processus métier les plus complexes grâce à l'Intelligence Artificielle.",
-    icon: Headphones,
+    icon: Brain,
     features: [
       { icon: BarChart3, text: "Intégration d'IA générative" },
       { icon: TrendingUp, text: "Pipelines Data & Dashboards avancés" },

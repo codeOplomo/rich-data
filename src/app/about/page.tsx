@@ -1,12 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import { Users, Target, Award, Heart, Rocket, Code2, Brain, Palette } from "lucide-react";
+import { Users, Target, Shield, Server, RotateCcw, TrendingUp, Code2, Brain, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const values = [
   {
-    icon: Heart,
+    icon: Server,
     title: "Pérennité Technologique",
     description: "Nous concevons des architectures logicielles évolutives et rigoureusement documentées. Chaque projet est pensé pour minimiser la dette technique et accompagner sereinement la croissance de vos opérations sur le long terme.",
   },
@@ -16,12 +16,12 @@ const values = [
     description: "La protection de vos actifs numériques est au cœur de nos protocoles. Nous déployons des infrastructures chiffrées de bout en bout, en stricte conformité avec les standards internationaux et les directives de la CNDP (Loi 09-08).",
   },
   {
-    icon: Users,
+    icon: RotateCcw,
     title: "Transparence Opérationnelle",
     description: "Notre méthodologie garantit une visibilité absolue sur l'avancement de vos projets. Grâce à des cycles de développement itératifs (Agile), vous gardez un contrôle continu sur chaque phase de validation avant la mise en production.",
   },
   {
-    icon: Rocket,
+    icon: TrendingUp,
     title: "Performance Mesurable",
     description: "Le choix de vos technologies (IA, Cloud, Data Analytics) ne doit pas être guidé par la tendance, mais par l'efficacité. Notre objectif est d'optimiser vos processus internes, d'accélérer vos performances et de maximiser votre retour sur investissement.",
   },
@@ -148,8 +148,8 @@ export default function AboutPage() {
                 {[
                   { icon: Code2, label: "Écosystèmes déployés", value: "150+" },
                   { icon: Brain, label: "Points de données traités", value: "50M+" },
-                  { icon: Palette, label: "Temps de réponse API", value: "< 100ms" },
-                  { icon: Award, label: "Code & Ingénierie interne", value: "100%" },
+                  { icon: Zap, label: "Temps de réponse API", value: "< 100ms" },
+                  { icon: Shield, label: "Code & Ingénierie interne", value: "100%" },
                 ].map((stat) => (
                   <div key={stat.label} className="glass-card p-6 text-center">
                     <stat.icon className="w-8 h-8 text-primary mx-auto mb-3" />

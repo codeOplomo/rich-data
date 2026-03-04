@@ -2,17 +2,17 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import {
-  Globe,
+  Server,
   Shield,
   Cpu,
-  LineChart,
-  Palette,
+  FileCode,
   Rocket,
+  Zap,
 } from "lucide-react";
 
 const features = [
   {
-    icon: Globe,
+    icon: Server,
     title: "Architecture Scalable",
     description: "Nous concevons des infrastructures cloud prêtes à évoluer pour encaisser la charge de votre hyper-croissance sans aucun ralentissement.",
   },
@@ -27,12 +27,12 @@ const features = [
     description: "Nous intégrons la puissance des LLMs et du Machine Learning dans vos outils métiers, sans jamais exposer vos données confidentielles.",
   },
   {
-    icon: LineChart,
+    icon: FileCode,
     title: "Code Clean & Documenté",
     description: "Nous livrons un code source propre, rigoureusement testé, versionné et documenté pour garantir une maintenance sans friction par vos équipes.",
   },
   {
-    icon: Palette,
+    icon: Zap,
     title: "Performance Brute",
     description: "Nous optimisons chaque milliseconde de vos bases de données et de vos requêtes API pour offrir une expérience utilisateur sans aucune latence.",
   },
