@@ -183,11 +183,10 @@ export default function PortfolioPage() {
                 Portfolio
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6">
-                Nos <span className="gradient-text">réalisations</span>
+                Des architectures conçues pour <span className="gradient-text">performer</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Découvrez une sélection de nos projets récents et comment nous avons aidé
-                nos clients à atteindre leurs objectifs digitaux.
+                De la structuration de données complexes au déploiement d'applications métiers, découvrez comment notre ingénierie répond aux défis technologiques de nos clients.
               </p>
             </motion.div>
           </div>

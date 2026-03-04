@@ -12,18 +12,18 @@ const values = [
   },
   {
     icon: Target,
-    title: "Excellence",
-    description: "Nous visons l'excellence dans chaque ligne de code et chaque pixel de design.",
+    title: "Sécurité & Conformité",
+    description: "La protection de vos actifs numériques est au cœur de nos protocoles. Nous déployons des infrastructures chiffrées de bout en bout, en stricte conformité avec les standards internationaux et les directives de la CNDP (Loi 09-08).",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "Nous travaillons en étroite collaboration avec nos clients, comme une extension de leur équipe.",
+    title: "Transparence Opérationnelle",
+    description: "Notre méthodologie garantit une visibilité absolue sur l'avancement de vos projets. Grâce à des cycles de développement itératifs (Agile), vous gardez un contrôle continu sur chaque phase de validation avant la mise en production.",
   },
   {
     icon: Rocket,
-    title: "Innovation",
-    description: "Nous restons à la pointe des technologies pour offrir des solutions modernes et performantes.",
+    title: "Performance Mesurable",
+    description: "Le choix de vos technologies (IA, Cloud, Data Analytics) ne doit pas être guidé par la tendance, mais par l'efficacité. Notre objectif est d'optimiser vos processus internes, d'accélérer vos performances et de maximiser votre retour sur investissement.",
   },
 ];
 
@@ -217,11 +217,14 @@ export default function AboutPage() {
               className="text-center mb-16"
             >
               <span className="text-primary text-sm font-medium tracking-wider uppercase">
-                Notre Histoire
+                NOTRE STACK TECHNIQUE
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-4">
-                Le parcours de <span className="gradient-text">RichData</span>
+                Les technologies derrière nos <span className="gradient-text">performances</span>
               </h2>
+              <p className="text-muted-foreground leading-relaxed mb-6 max-w-xl mx-auto">
+                Nous déployons les frameworks, les langages et les infrastructures cloud les plus robustes du marché pour garantir la scalabilité et la sécurité de vos écosystèmes.
+              </p>
             </motion.div>
 
             <div className="max-w-3xl mx-auto relative">
@@ -270,13 +273,13 @@ export default function AboutPage() {
               className="text-center mb-16"
             >
               <span className="text-primary text-sm font-medium tracking-wider uppercase">
-                Notre Équipe
+                NOTRE EXPERTISE HUMAINE
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-4">
-                Les visages derrière <span className="gradient-text">RichData</span>
+                Le noyau dur de <span className="gradient-text">RichData</span>
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                Une équipe diverse et talentueuse, unie par la passion de l&apos;innovation.
+                Une équipe d'ingénierie experte, sans sous-traitance, dédiée à la performance et à la sécurité de vos infrastructures.
               </p>
             </motion.div>
 
@@ -320,20 +323,20 @@ export default function AboutPage() {
               className="glass-card p-12 text-center max-w-3xl mx-auto"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Prêt à rejoindre l&apos;aventure ?
+                Prêt à bâtir votre infrastructure de demain ?
               </h2>
               <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-                Discutons de votre projet et voyons comment nous pouvons vous aider à atteindre vos objectifs.
+                Discutons de vos enjeux technologiques et définissons ensemble l'architecture capable de porter vos ambitions.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link href="/contact">
                   <Button variant="hero" size="lg">
-                    Nous contacter
+                    Démarrer une consultation
                   </Button>
                 </Link>
                 <Link href="/services">
                   <Button variant="outline-glow" size="lg">
-                    Nos services
+                    Explorer nos expertises
                   </Button>
                 </Link>
               </div>

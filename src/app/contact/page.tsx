@@ -21,8 +21,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "contact@richdata.dev",
-    href: "mailto:contact@richdata.dev",
+    value: "contact@in-talks.ma",
+    href: "mailto:contact@in-talks.ma",
   },
   {
     icon: Phone,
@@ -33,13 +33,13 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Adresse",
-    value: "75 Avenue des Champs-Élysées, 75008 Paris",
+    value: "64 Av. de l'Hermitage, Casablanca 20540",
     href: "#",
   },
   {
     icon: Clock,
     title: "Horaires",
-    value: "Lun - Ven : 9h00 - 18h00",
+    value: "Lun - Ven : 09h00 - 18h00",
     href: "#",
   },
 ];
@@ -113,15 +113,14 @@ export default function ContactPage() {
               className="max-w-3xl mx-auto text-center"
             >
               <span className="text-primary text-sm font-medium tracking-wider uppercase">
-                Contact
+                CONSULTATION
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6">
-                Parlons de votre{" "}
-                <span className="gradient-text">projet</span>
+                Évaluons votre{" "}
+                <span className="gradient-text">architecture</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Que vous ayez une question, un projet en tête ou simplement envie de discuter,
-                nous sommes là pour vous. Réponse garantie sous 24h.
+                Discutons de vos enjeux technologiques ou de vos flux de données. Nos ingénieurs analysent votre besoin et définissent une trajectoire sur-mesure sous 24h.
               </p>
             </motion.div>
           </div>
