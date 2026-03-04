@@ -21,67 +21,67 @@ import Link from "next/link";
 
 const services = [
   {
-    id: "veille-sociale",
-    title: "Veille Sociale",
-    subtitle: "Intelligence sociale en temps réel",
-    description:
-      "Captez le pouls des conversations en ligne. Notre plateforme alimentée par l'IA surveille, analyse et fournit des insights exploitables depuis chaque recoin du paysage numérique.",
-    icon: Headphones,
-    features: [
-      { icon: BarChart3, text: "Analyse de sentiment en temps réel", description: "Comprenez les émotions derrière chaque mention de votre marque." },
-      { icon: TrendingUp, text: "Détection et prévision des tendances", description: "Anticipez les tendances avant qu'elles ne deviennent virales." },
-      { icon: MessageSquare, text: "Suivi des mentions de marque", description: "Ne manquez jamais une conversation importante sur votre marque." },
-      { icon: Globe, text: "Couverture multiplateforme", description: "Surveillez toutes les plateformes sociales depuis un seul tableau de bord." },
-    ],
-    benefits: [
-      "Réduction de 80% du temps d'analyse",
-      "Alertes en temps réel sur les crises potentielles",
-      "Rapports personnalisés automatiques",
-      "Intégration avec vos outils existants",
-    ],
-    accentClass: "text-primary",
-    glowClass: "glow-cyan",
-  },
-  {
     id: "developpement-web",
-    title: "Développement Web",
-    subtitle: "Sites et applications web modernes",
+    title: "Architectures Web & Applications Métier",
+    subtitle: "INGÉNIERIE WEB & MOBILE",
     description:
-      "Du concept au lancement, nous créons des sites web et applications ultra-rapides et élégants avec des technologies de pointe qui évoluent avec vos ambitions.",
+      "Conception d'architectures web robustes et évolutives. Nous développons des portails métiers, des outils internes et des solutions SaaS capables de supporter une forte charge utilisateur sans compromis sur la stabilité.",
     icon: Code2,
     features: [
-      { icon: Layers, text: "Architecture moderne", description: "Next.js, React, Vue.js - nous maîtrisons les frameworks les plus performants." },
-      { icon: Zap, text: "Performance optimale", description: "Sites ultra-rapides avec des scores Lighthouse parfaits." },
-      { icon: Shield, text: "Sécurité renforcée", description: "Conformité aux meilleures pratiques de sécurité web." },
-      { icon: Palette, text: "Design sur mesure", description: "Chaque projet est unique, tout comme votre identité visuelle." },
+      { icon: Layers, text: "Plateformes SaaS & B2B", description: "Développement d'outils internes et de solutions logicielles capables d'encaisser de fortes charges (React.js, Next.js, Node.js)." },
+      { icon: Zap, text: "Ingénierie Mobile", description: "Conception d'applications (iOS/Android) natives et cross-platform performantes pour environnements critiques (Flutter, Swift, Kotlin)." },
+      { icon: Shield, text: "Modernisation & Refactoring", description: "Audit de sécurité, résorption de la dette technique de votre code legacy et refactoring progressif." },
+      { icon: Palette, text: "Infrastructure & Cloud", description: "Conteneurisation et orchestration de vos services vers des environnements cloud modernes (Docker, Kubernetes, AWS)." },
     ],
     benefits: [
-      "Temps de chargement < 2 secondes",
-      "SEO optimisé dès la conception",
-      "Responsive design parfait",
-      "Maintenance et support inclus",
+      "Architecture orientée microservices et API REST/GraphQL",
+      "Gestion des états complexes et bases de données optimisées",
+      "Synchronisation hors-ligne (offline-first)",
+      "Migration cloud sans interruption (Zero Downtime)",
     ],
     accentClass: "text-accent",
     glowClass: "glow-accent",
   },
   {
-    id: "developpement-mobile",
-    title: "Applications Mobile",
-    subtitle: "iOS & Android natifs et cross-platform",
+    id: "veille-sociale",
+    title: "Intelligence Artificielle & Modèles Privés",
+    subtitle: "DATA SCIENCE & IA",
     description:
-      "Créez des expériences mobiles exceptionnelles. Nous développons des applications natives et cross-platform qui séduisent vos utilisateurs et boostent votre croissance.",
-    icon: Smartphone,
+      "Automatisez vos processus métiers grâce à l'Intelligence Artificielle, sans exposer vos données confidentielles. Nous intégrons des algorithmes sur-mesure pour la génération, l'analyse et la décision.",
+    icon: Headphones,
     features: [
-      { icon: Smartphone, text: "Cross-platform efficace", description: "React Native et Flutter pour un développement rapide et économique." },
-      { icon: Cpu, text: "Performance native", description: "Des applications fluides qui rivalisent avec les apps natives." },
-      { icon: Shield, text: "Sécurité des données", description: "Chiffrement et protection des données utilisateurs." },
-      { icon: Zap, text: "Mises à jour agiles", description: "Déploiement continu et mises à jour over-the-air." },
+      { icon: BarChart3, text: "IA Privée & LLMs", description: "Intégration de modèles de langage sur-mesure pour l'analyse de texte et les assistants virtuels (OpenAI API, LangChain)." },
+      { icon: TrendingUp, text: "Machine Learning", description: "Entraînement et déploiement d'algorithmes prédictifs intégrés directement à vos flux métiers (TensorFlow, PyTorch)." },
+      { icon: MessageSquare, text: "Ingénierie Data (ETL)", description: "Construction de pipelines robustes pour collecter, nettoyer et unifier vos données disparates (ERP, CRM, Web)." },
+      { icon: Globe, text: "Tableaux de Bord (BI)", description: "Restitution de vos données dans des interfaces interactives et décisionnelles (BigQuery, PowerBI, Looker Studio)." },
     ],
     benefits: [
-      "Présence sur les deux stores",
-      "Code partagé à 95%",
-      "UI/UX native optimisée",
-      "Analytics intégrés",
+      "Déploiement d'IA sur des serveurs isolés",
+      "Fine-tuning de modèles (LLMs)",
+      "Traitement avancé du langage naturel (NLP)",
+      "Data Warehousing et requêtes complexes",
+    ],
+    accentClass: "text-primary",
+    glowClass: "glow-cyan",
+  },
+  {
+    id: "developpement-mobile",
+    title: "Intelligence Sociale Temps Réel",
+    subtitle: "DATA MINING & SOCIAL LISTENING",
+    description:
+      "Déploiement de solutions de collecte massive d'informations sur le web. Nous structurons le bruit numérique pour en extraire des indicateurs de performance (KPIs) exploitables pour votre stratégie.",
+    icon: Smartphone,
+    features: [
+      { icon: Smartphone, text: "Moteurs NLP Propriétaires", description: "Compréhension algorithmique poussée pour décrypter les émotions et le contexte derrière chaque interaction en ligne." },
+      { icon: Cpu, text: "Tracking Chirurgical", description: "Surveillance multiplateforme et suivi en temps réel des mentions de votre marque (Bases NoSQL, MongoDB)." },
+      { icon: Shield, text: "Alertes Prédictives", description: "Anticipation des tendances et des crises potentielles grâce à la détection automatisée des pics d'activité." },
+      { icon: Zap, text: "Reporting Automatisé", description: "Génération de rapports stratégiques instantanés, réduisant de 80% le temps d'analyse de vos équipes." },
+    ],
+    benefits: [
+      "Web scraping éthique et collecte massive",
+      "Analyse de sentiment algorithmique",
+      "Détection d'anomalies et de signaux faibles",
+      "Interopérabilité totale avec vos outils existants",
     ],
     accentClass: "text-primary",
     glowClass: "glow-cyan",
@@ -127,15 +127,14 @@ export default function ServicesPage() {
               className="max-w-3xl mx-auto text-center"
             >
               <span className="text-primary text-sm font-medium tracking-wider uppercase">
-                Nos Services
+                NOS EXPERTISES
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6">
-                Des solutions complètes pour votre{" "}
-                <span className="gradient-text">transformation digitale</span>
+                L'ingénierie de pointe pour vos{" "}
+                <span className="gradient-text">ambitions digitales</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                De la veille sociale au développement d&apos;applications, nous couvrons tous
-                vos besoins digitaux avec expertise et passion.
+                De l'audit architectural au déploiement d'écosystèmes data complexes, nous concevons des solutions sur-mesure pour transformer vos défis technologiques en leviers de croissance.
               </p>
             </motion.div>
           </div>

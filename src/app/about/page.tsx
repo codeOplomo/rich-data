@@ -7,8 +7,8 @@ import Link from "next/link";
 const values = [
   {
     icon: Heart,
-    title: "Passion",
-    description: "Nous aimons ce que nous faisons et cela se reflète dans chaque projet que nous livrons.",
+    title: "Pérennité Technologique",
+    description: "Nous concevons des architectures logicielles évolutives et rigoureusement documentées. Chaque projet est pensé pour minimiser la dette technique et accompagner sereinement la croissance de vos opérations sur le long terme.",
   },
   {
     icon: Target,
@@ -101,15 +101,14 @@ export default function AboutPage() {
               className="max-w-3xl mx-auto text-center"
             >
               <span className="text-primary text-sm font-medium tracking-wider uppercase">
-                À propos de nous
+                QUI SOMMES-NOUS ?
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6">
-                Une équipe passionnée par l&apos;
-                <span className="gradient-text">Excellence Digitale</span>
+                L'ingénierie de pointe propulsée par l&apos;
+                <span className="gradient-text">Intelligence Artificielle</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Depuis 2018, nous aidons les entreprises à transformer leur présence numérique
-                grâce à l&apos;intelligence sociale et au développement de produits digitaux innovants.
+                Née du développement d'algorithmes complexes d'analyse de données, notre équipe d'experts 100% interne vous accompagne de la conception architecturale jusqu'au déploiement de vos applications métiers.
               </p>
             </motion.div>
           </div>
@@ -129,17 +128,13 @@ export default function AboutPage() {
                   Notre Mission
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-6">
-                  Donner aux marques le <span className="gradient-text">pouvoir des données</span>
+                  Transformer la complexité en <span className="gradient-text">performance brute</span>
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Notre mission est de démocratiser l&apos;accès à l&apos;intelligence sociale et de créer
-                  des produits digitaux qui font la différence. Nous croyons que chaque entreprise,
-                  quelle que soit sa taille, mérite d&apos;avoir accès aux meilleurs outils d&apos;analyse
-                  et de développement.
+                  Notre mission est de concevoir les fondations technologiques et data qui soutiennent la croissance de votre entreprise. Au-delà du développement web traditionnel, nous architecturons des bases de données complexes et intégrons des modèles d'intelligence artificielle sur-mesure pour créer des écosystèmes digitaux hautement performants.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Nous combinons expertise technique, créativité et compréhension business pour
-                  livrer des solutions qui dépassent les attentes.
+                  Nous appliquons une rigueur d'ingénierie stricte à chaque projet, alliant sécurité, vitesse et innovation. 
                 </p>
               </motion.div>
 
@@ -151,10 +146,10 @@ export default function AboutPage() {
                 className="grid grid-cols-2 gap-4"
               >
                 {[
-                  { icon: Code2, label: "Développement", value: "150+" },
-                  { icon: Brain, label: "Projets IA", value: "80+" },
-                  { icon: Palette, label: "Designs", value: "200+" },
-                  { icon: Award, label: "Récompenses", value: "12" },
+                  { icon: Code2, label: "Écosystèmes déployés", value: "150+" },
+                  { icon: Brain, label: "Points de données traités", value: "50M+" },
+                  { icon: Palette, label: "Temps de réponse API", value: "< 100ms" },
+                  { icon: Award, label: "Code & Ingénierie interne", value: "100%" },
                 ].map((stat) => (
                   <div key={stat.label} className="glass-card p-6 text-center">
                     <stat.icon className="w-8 h-8 text-primary mx-auto mb-3" />
@@ -178,10 +173,10 @@ export default function AboutPage() {
               className="text-center mb-16"
             >
               <span className="text-primary text-sm font-medium tracking-wider uppercase">
-                Nos Valeurs
+                NOTRE ENGAGEMENT
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-4">
-                Ce qui nous <span className="gradient-text">guide</span>
+                Nos principes d'<span className="gradient-text">ingénierie</span>
               </h2>
             </motion.div>
 

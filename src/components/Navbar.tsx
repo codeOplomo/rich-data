@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const navLinks = [
   { label: "À propos", href: "/about" },
-  { label: "Services", href: "/services" },
+  { label: "Expertises", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Contact", href: "/contact" },
 ];
@@ -56,7 +56,7 @@ const Navbar = () => {
         {/* Desktop CTA */}
         <Link href="/contact">
           <Button variant="hero" size="sm" className="hidden md:flex">
-            Get Started
+            Parler à un ingénieur
           </Button>
         </Link>
 
